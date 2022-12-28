@@ -46,7 +46,9 @@ export default function Register() {
       await api.post("/users", {
         username: data.username,
         name: data.name,
-      })
+      });
+
+      await router.push("/register/connect-calendar");
     } catch(err) {
       if (err instanceof AxiosError && err?.response?.data?.message) {
         return alert(err.response.data.message);
