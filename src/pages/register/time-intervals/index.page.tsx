@@ -80,7 +80,7 @@ export default function TimeIntervals() {
     resolver: zodResolver(timeIntervalsFormSchema),
   });
 
-  const weekDays = getWeekDays();
+  const weekDays = getWeekDays({short: false});
 
   const { fields } = useFieldArray({
     control,
