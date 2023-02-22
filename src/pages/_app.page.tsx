@@ -16,7 +16,7 @@ export default function App({ Component, pageProps: { session, ...pageProps }}: 
             openGraph={{
               type: 'website',
               locale: 'pt_BR',
-              url: 'https://www.url.ie/',
+              url: 'https://ignite-call-gules.vercel.app',
               siteName: 'Ignite Call',
             }}
           />

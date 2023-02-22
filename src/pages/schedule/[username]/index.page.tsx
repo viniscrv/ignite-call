@@ -17,7 +17,9 @@ export default function Schedule({user} : ScheduleProps) {
     return (
         <>
         <NextSeo 
-            title={`Agendar com ${user.name}| Ignite Call`}
+            title={`Agendar com ${user.name} | Ignite Call`}
+            description={`Agendamento com ${user.name}`}
+            canonical={`https://ignite-call-gules.vercel.app/schedule/${user.name}`}
         />
         <Container>
             <UserHeader>
